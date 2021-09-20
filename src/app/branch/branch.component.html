@@ -1,0 +1,103 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="branch-container">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" name="" value="" class="form-control" placeholder="Buscar">
+      </div>
+      <div class="col-md-6">
+        <a routerLink="/create-branch" routerLinkActive="active" class="btn-daiso">Crear Sucursal</a>
+        <!-- <a href="#" class="btn-daiso"> Importar</a> -->
+      </div>
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Empresa Asociada</th>
+                <th>Identificador</th>
+                <th>Contacto asociado</th>
+                <th>Teléfono</th>
+                <th>Extención</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pollo Campero</td>
+                <td>Campero Miraflores</td>
+                <td>Juan Perez</td>
+                <td>1243-2142</td>
+                <td>121</td>
+                <td>
+                  <div ngbDropdown class="d-inline-block btn-details">
+                    <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/edit.svg" alt=""></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem routerLink="/detail-business" routerLinkActive="active">Ver detalles</button>
+                      <button ngbDropdownItem>Editar</button>
+                      <button ngbDropdownItem>Eliminar</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Pollo Campero</td>
+                <td>Campero Miraflores</td>
+                <td>Juan Perez</td>
+                <td>1243-2142</td>
+                <td>121</td>
+                <td>
+                  <div ngbDropdown class="d-inline-block btn-details">
+                    <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/edit.svg" alt=""></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem routerLink="/detail-business" routerLinkActive="active">Ver detalles</button>
+                      <button ngbDropdownItem>Editar</button>
+                      <button ngbDropdownItem>Eliminar</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Pollo Campero</td>
+                <td>Campero Miraflores</td>
+                <td>Juan Perez</td>
+                <td>1243-2142</td>
+                <td>121</td>
+                <td>
+                  <div ngbDropdown class="d-inline-block btn-details">
+                    <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/edit.svg" alt=""></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem routerLink="/detail-business" routerLinkActive="active">Ver detalles</button>
+                      <button ngbDropdownItem>Editar</button>
+                      <button ngbDropdownItem>Eliminar</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav aria-label="Page navigation" class="pager">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

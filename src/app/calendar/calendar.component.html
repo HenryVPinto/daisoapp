@@ -1,0 +1,546 @@
+<section class="content-box">
+   <app-sidebar id="sidebar"></app-sidebar>
+   <app-header id="header"></app-header>
+   <div class="calendar-container">
+      <div class="row">
+         <div class="date_week col-md-6">
+            <h2>Semana 46</h2>
+            <p>Hoy es miércoles 14 de noviembre de 2019</p>
+         </div>
+         <div class="col-md-12">
+            <div class="calendar-daily">
+               <button type="button" class="btn btn-outline-primary calendar-header" (click)="isCollapsed = !isCollapsed"
+               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">
+               <h4>Lunes</h4>
+               <p>12/11/2019</p>
+               <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+               </button>
+               <div id="collapseOne" [ngbCollapse]="isCollapsed">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th>No.</th>
+                                    <th>Cliente</th>
+                                    <th>Objetivos</th>
+                                    <th>Inicia</th>
+                                    <th>Termina</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="accomplished">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/completed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="postponed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/postponed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Campero</td>
+                                    <td><b> Trámite de OC </b></td>
+                                    <td>18:00</td>
+                                    <td>20:00</td>
+                                    <td>
+                                       <span class="removed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/delete-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-outline-primary calendar-header" (click)="isCollapsed2 = !isCollapsed2"
+               [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseTwo">
+               <h4>Martes</h4>
+               <p>12/11/2019</p>
+               <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+               </button>
+               <div id="collapseTwo" [ngbCollapse]="isCollapsed2">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th>No.</th>
+                                    <th>Cliente</th>
+                                    <th>Objetivos</th>
+                                    <th>Inicia</th>
+                                    <th>Termina</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="accomplished">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                  <td><a routerLink="/completed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="postponed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/postponed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Campero</td>
+                                    <td><b> Trámite de OC </b></td>
+                                    <td>18:00</td>
+                                    <td>20:00</td>
+                                    <td>
+                                       <span class="removed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/delete-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-outline-primary calendar-header" (click)="isCollapsed3 = !isCollapsed3"
+               [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseThree">
+               <h4>Miercoles</h4>
+               <p>12/11/2019</p>
+               <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+               </button>
+               <div id="collapseThree" [ngbCollapse]="isCollapsed3">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th>No.</th>
+                                    <th>Cliente</th>
+                                    <th>Objetivos</th>
+                                    <th>Inicia</th>
+                                    <th>Termina</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="accomplished">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/completed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="postponed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/postponed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Campero</td>
+                                    <td><b> Trámite de OC </b></td>
+                                    <td>18:00</td>
+                                    <td>20:00</td>
+                                    <td>
+                                       <span class="removed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/delete-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-outline-primary calendar-header" (click)="isCollapsed4 = !isCollapsed4"
+               [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseFour">
+               <h4>Jueves</h4>
+               <p>12/11/2019</p>
+               <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+               </button>
+               <div id="collapseFour" [ngbCollapse]="isCollapsed4">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th>No.</th>
+                                    <th>Cliente</th>
+                                    <th>Objetivos</th>
+                                    <th>Inicia</th>
+                                    <th>Termina</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="accomplished">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/completed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="postponed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/postponed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Campero</td>
+                                    <td><b> Trámite de OC </b></td>
+                                    <td>18:00</td>
+                                    <td>20:00</td>
+                                    <td>
+                                       <span class="removed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/delete-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-outline-primary calendar-header" (click)="isCollapsed5 = !isCollapsed5"
+               [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseFive">
+               <h4>Viernes</h4>
+               <p>12/11/2019</p>
+               <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+               </button>
+               <div id="collapseFive" [ngbCollapse]="isCollapsed5">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="table-responsive">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th>No.</th>
+                                    <th>Cliente</th>
+                                    <th>Objetivos</th>
+                                    <th>Inicia</th>
+                                    <th>Termina</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="accomplished">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/completed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="postponed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/postponed-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Campero</td>
+                                    <td><b> Trámite de OC </b></td>
+                                    <td>18:00</td>
+                                    <td>20:00</td>
+                                    <td>
+                                       <span class="removed">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                             <div class="checkmark_kick"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/delete-report">Ir a evento</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>Daisochem</td>
+                                    <td><b> Demostración </b></td>
+                                    <td>14:00</td>
+                                    <td>15:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>Campero</td>
+                                    <td><b> Entrevista en oficina </b></td>
+                                    <td>16:00</td>
+                                    <td>17:00</td>
+                                    <td>
+                                       <span class="pending">
+                                          <span class="checkmark">
+                                             <div class="checkmark_stem"></div>
+                                          </span>
+                                       </span>
+                                    </td>
+                                    <td><a routerLink="/execution">Ejecutar programación</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

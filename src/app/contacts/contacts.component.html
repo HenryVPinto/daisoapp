@@ -1,0 +1,70 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="contact-container" *blockUI="'contact-view'">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" name="" value="" class="form-control" placeholder="Buscar">
+      </div>
+      <div class="col-md-6">
+        <a routerLink="/create-contacts" routerLinkActive="active" class="btn-daiso">Crear Contacto</a>
+        <!-- <a href="#" class="btn-daiso"> Importar</a> -->
+      </div>
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Ext.</th>
+                <th>Empresa Asociada</th>
+                <th>Fecha de creación</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let contact of contacts">
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+                <td>{{ contact.phone }}</td>
+                <td>{{ contact.extension }}</td>
+                <td>{{ contact.owner }}</td>
+                <td>{{ contact.date_create }}</td>
+                <td>
+                  <div ngbDropdown class="d-inline-block btn-details">
+                    <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/edit.svg" alt=""></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem routerLink="/edit-contacts/{{contact.id}}" routerLinkActive="active">Editar</button>
+                      <button ngbDropdownItem (click)="confirmDelete(contact.id)">Eliminar</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav aria-label="Page navigation" class="pager">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

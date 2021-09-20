@@ -1,0 +1,20 @@
+<header>
+  <div class="row">
+    <div class="page-header__title">
+      <!--h4> Title Section </h4-->
+    </div>
+    <div class="top-menu-container">
+      <!--a href="#" class="notification"> <img src="../assets/images/notification.svg" alt=""> </a-->
+      <div class="dropdown">
+        <div ngbDropdown class="d-inline-block btn-details">
+          <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/user.svg" alt="">  {{ name }} <span class="caret"></span></button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="boxdrop">
+            <button ngbDropdownItem>ID: 00123</button>
+            <button ngbDropdownItem class="text-danger">Reportar Emergencia</button>
+            <button ngbDropdownItem>Cerrar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

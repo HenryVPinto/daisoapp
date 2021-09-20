@@ -1,0 +1,133 @@
+aside{
+display: block;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+width: 240px;
+min-width: 240px;
+height: 100%;
+background: #F7F9FA;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+position: fixed;
+left: 0;
+background: #fff;
+.logo{
+  padding: 25px;
+  text-align: center;
+}
+img{
+  width: 100px;
+}
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  li{
+    a{
+      padding: 15px;
+      display: block;
+      color: #393939;
+      border-left: 5px solid #fff;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      &:hover{
+        background: #DFE8FC;
+        color: #393939;
+        border-left: 5px solid #7BADF3;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+      }
+      img{
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.collapse-menu{
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #393939;
+  border-left: 5px solid #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  .arrow-one{
+    margin-left: 40px;
+  }
+  &:hover{
+    background: #DFE8FC;
+    color: #393939;
+    border-left: 5px solid #7BADF3;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+  }
+  img{
+    width: 15px;
+    margin-right: 10px;
+  }
+}
+.card{
+  ul{
+    margin: 0;
+    li{
+      a{
+        padding-left: 60px;
+        background: #f9f9f9;
+        border-bottom: 1px solid #eee;
+      }
+    }
+  }
+}
+.menumovil {
+  button {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  aside{
+    width: 100%;
+    height: auto;
+    .logo {
+      padding: 15px;
+      position: relative;
+      .menumovil {
+        position: absolute;
+        top: 30%;
+        .btnmenu {
+          background: transparent;
+          width: 50px;
+          span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background: #092661;
+            margin: 0 0 2px 0;
+            }
+          }
+      }
+    }
+    .navigation {
+      display: none;
+    }
+  }
+}

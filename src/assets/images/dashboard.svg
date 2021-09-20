@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>001-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="empresa_editar" transform="translate(-17.000000, -133.000000)" fill="#91A4AD" fill-rule="nonzero">
+            <g id="001-symbol" transform="translate(17.000000, 133.000000)">
+                <rect id="Rectangle-path" x="0" y="0" width="4" height="3"></rect>
+                <rect id="Rectangle-path" x="6" y="0" width="4" height="3"></rect>
+                <rect id="Rectangle-path" x="0" y="4" width="4" height="3"></rect>
+                <path d="M6,7 L10,7 L10,4 L6,4 L6,7 Z M6.46153846,4.50533408 L9.53846154,4.50533408 L9.53846154,6.49466592 L6.46153846,6.49466592 L6.46153846,4.50533408 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="0" y="8" width="4" height="3"></rect>
+                <path d="M6,11 L10,11 L10,8 L6,8 L6,11 Z M6.46153846,8.50533408 L9.53846154,8.50533408 L9.53846154,10.4948344 L6.46153846,10.4948344 L6.46153846,8.50533408 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="11" y="4" width="4" height="3"></rect>
+                <rect id="Rectangle-path" x="11" y="8" width="4" height="3"></rect>
+                <rect id="Rectangle-path" x="6" y="12" width="4" height="3"></rect>
+                <rect id="Rectangle-path" x="11" y="12" width="4" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

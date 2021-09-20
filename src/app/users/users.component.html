@@ -1,0 +1,46 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="user-container" *blockUI="'user-view'">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" name="" value="" placeholder="Buscar Usuario" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <a routerLink="/create-user" routerLinkActive="active" class="btn-daiso">Crear Usuario</a>
+      </div>
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Línea</th>
+                <th>Fecha de creación</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.firstName }} {{ user.lastName }}</td>
+                <td>{{ user.idPlanSale }}</td>
+                <td>{{ user.date_create }}</td>
+                <td>
+                  <div ngbDropdown class="d-inline-block btn-details">
+                    <button class="drop-more" id="dropdownBasic1" ngbDropdownToggle><img src="../assets/images/edit.svg" alt=""></button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem routerLink="/edit-user/{{user.id}}" routerLinkActive="active" >Editar</button>
+                      <button ngbDropdownItem (click)="confirmDelete(user.id)">Eliminar</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

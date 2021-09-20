@@ -1,0 +1,18 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="user-container" *blockUI="'create-user-view'">
+    <div class="box-form-create">
+      <input type="text" class="form-control" placeholder="D1203  (ID de vendedor generado automáticamente)" disabled>
+      <input type="text" class="form-control" placeholder="12/05/2019 (Automático)" disabled>
+      <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="user.firstName">
+      <input type="text" class="form-control" placeholder="Apellido" [(ngModel)]="user.lastName">
+      <input type="text" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="user.email">
+      <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="user.password" autocomplete="new-password">
+      <input type="text" class="form-control" placeholder="Línea" [(ngModel)]="user.idPlanSale">
+      <div class="text-center">
+        <button class="btn-daiso" (click)="verify()" > {{ buttonTitle }} </button>
+      </div>
+    </div>
+  </div>
+</section>

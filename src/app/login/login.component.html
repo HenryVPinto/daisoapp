@@ -1,0 +1,21 @@
+<section class="login-component" *blockUI="'login-view'">
+  <div class="login">
+    <div class="row">
+      <div class="col-md-6 colfirts">
+        <img class="logomovil" src="../assets/images/logo_daiso.png" alt="">
+        <h2>Iniciar Sesión</h2>
+        <input type="mail" name="" value="" placeholder="Email" class="form-control" [(ngModel)]="email">
+        <input type="password" name="" value="" placeholder="Contraseña" class="form-control" [(ngModel)]="password" (keyup.enter)="validateInputs()">
+        <div class="row">
+          <div class="col-md-12">
+              <a  routerLink="/dashboard" routerLinkActive="active">Ingreso Temporal</a>
+          </div>
+        </div>
+        <button type="button" name="button" class="btn" (click)="validateInputs()">Login</button>
+      </div>
+      <div class="col-md-6 col-logo">
+        <img src="../assets/images/logo_daiso.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>

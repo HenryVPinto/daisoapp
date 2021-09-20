@@ -1,0 +1,203 @@
+.calendar-container{
+  padding: 60px;
+  .col-md-12{
+    padding: 0;
+  }
+  .date_week{
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 15px;
+    h2{
+      font-size: 20px;
+      margin: 0 0 10px 0;
+      color: #91A4AD;
+      font-weight: bold;
+    }
+    p{
+      font-size: 18px;
+      color: #91A4AD;
+      margin: 0;
+    }
+  }
+}
+thead{
+  background: #ffffff;
+}
+.table > thead > tr > th {
+  vertical-align: middle;
+  border-bottom: none;
+  font-weight:500;
+  color: #414243;
+  padding: 15px;
+}
+.table > tbody > tr > td{
+  padding: 15px;
+  vertical-align: middle;
+  border-top: none;
+  background: #fff;
+  border-bottom: 1px solid #f2f2f2;
+  color: #989898;
+  &:hover{
+    img{
+      opacity: 1;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+    }
+  }
+  img{
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+  }
+}
+.calendar-daily{
+  .calendar-header{
+    width: 100%;
+    padding: 30px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #E3E3E3;
+    h4{
+      display: inline-block;
+      font-size: 15px;
+      color: #393939;
+      font-weight: bold;
+      margin: 0;
+    }
+    p{
+      display: inline-block;
+      margin: 0 50px;
+      font-size: 15px;
+      color: #393939;
+
+    }
+    &:hover{
+      background: #DFE8FC;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+    .arrow-one{
+      float: right;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+.accomplished{
+  height: 25px;
+  width: 25px;
+  background: #6AD582;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  .checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    .checkmark_stem {
+      position: absolute;
+      width: 2px;
+      height: 11px;
+      background-color: #FFFFFF;
+      left: 14px;
+      top: 4px;
+    }
+    .checkmark_kick {
+      position: absolute;
+      width: 6px;
+      height: 2px;
+      background-color: #FFFFFF;
+      left: 10px;
+      top: 15px;
+    }
+  }
+}
+.postponed{
+  height: 25px;
+  width: 25px;
+  background: #ECC039;
+  display: block;
+  border-radius: 50%;
+  .checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    .checkmark_stem {
+      position: absolute;
+      width: 2px;
+      height: 11px;
+      background-color: #FFFFFF;
+      left: 12px;
+      top: 4px;
+    }
+  }
+}
+.removed{
+  height: 25px;
+  width: 25px;
+  background: #EC3939;
+  display: block;
+  border-radius: 50%;
+  .checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    .checkmark_stem {
+      position: absolute;
+      width: 2px;
+      height: 12px;
+      background-color: #FFFFFF;
+      left: 12px;
+      top: 5px;
+    }
+    .checkmark_kick {
+      position: absolute;
+      width: 12px;
+      height: 2px;
+      background-color: #FFFFFF;
+      left: 7.4px;
+      top: 10px;
+    }
+  }
+}
+.pending{
+  height: 25px;
+  width: 25px;
+  background: #C4C4C4;
+  display: block;
+  border-radius: 50%;
+  .checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    .checkmark_stem {
+      position: absolute;
+      width: 2px;
+      height: 11px;
+      background-color: #FFFFFF;
+      left: 12px;
+      top: 4px;
+    }
+  }
+}

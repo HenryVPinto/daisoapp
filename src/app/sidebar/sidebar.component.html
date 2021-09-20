@@ -1,0 +1,64 @@
+<aside class="menu">
+  <div class="logo">
+    <img src="../assets/images/logo_daiso.png" alt="">
+    <!--div ngbDropdown class="d-inline-block menumovil">
+      <button class="btn btn-outline-primary btnmenu" id="dropdownBasic2" ngbDropdownToggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>
+          <ul>
+            <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+            Programación
+            <ul>
+              <li><a routerLink="/calendar" routerLinkActive="active">Calendario</a> </li>
+              <li><a routerLink="/weekly-visit-schedule">Programar</a> </li>
+              <li><a href="#">Visita en frío</a> </li>
+            </ul>
+              <li><a routerLink="/contacts" routerLinkActive="active"><img src="../assets/images/contact.svg" alt="">  Contactos</a></li>
+              <li><a routerLink="/business" routerLinkActive="active"><img src="../assets/images/companies.svg" alt=""> Empresas</a></li>
+              <li><a routerLink="/branch" routerLinkActive="active"><img src="../assets/images/companies.svg" alt=""> Sucursales</a></li>
+              <li><a routerLink="/users" routerLinkActive="active"><img src="../assets/images/contact.svg" alt=""> Vendedores</a></li>
+              <i><a href="#"><img src="../assets/images/reports.svg" alt=""> Reportes</a></li>
+          </ul>
+        </button>
+      </div>
+
+    </div-->
+  </div>
+  <div class="navigation">
+    <ul>
+      <li><a routerLink="/dashboard" routerLinkActive="active"> <img src="../assets/images/dashboard.svg" alt=""> Dashboard</a></li>
+
+      <button type="button" class="btn btn-outline-primary collapse-menu" (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+      <img src="../assets/images/programming.svg" alt=""> Programación <img src="../assets/images/arrowdown.svg" class="arrow-one" alt="">
+    </button>
+
+  <div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="card">
+      <div class="card-body">
+        <ul>
+          <li><a routerLink="/calendar" routerLinkActive="active">Calendario</a> </li>
+          <li><a routerLink="/weekly-visit-schedule">Programar</a> </li>
+          <!--li><a href="#">Visita en frío</a> </li-->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <li><a routerLink="/contacts" routerLinkActive="active"><img src="../assets/images/contact.svg" alt="">  Contactos</a></li>
+  <li><a routerLink="/business" routerLinkActive="active"><img src="../assets/images/companies.svg" alt=""> Empresas</a></li>
+  <!--li><a routerLink="/branch" routerLinkActive="active"><img src="../assets/images/companies.svg" alt=""> Sucursales</a></li-->
+  <li><a routerLink="/users" routerLinkActive="active"><img src="../assets/images/contact.svg" alt=""> Vendedores</a></li>
+  <!--li><a href="#"><img src="../assets/images/reports.svg" alt=""> Reportes</a></li-->
+</ul>
+</div>
+
+
+
+
+</aside>

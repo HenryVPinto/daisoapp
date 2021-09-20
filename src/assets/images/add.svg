@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="empresa_sucursal" transform="translate(-674.000000, -870.000000)">
+            <g id="Group-2" transform="translate(674.000000, 870.000000)">
+                <circle id="Oval-2" fill="#22A2F5" cx="15" cy="15" r="15"></circle>
+                <path d="M15.5,8.5 L15.5,21.5" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+                <path d="M22,15 L9,15" id="Line-3" stroke="#FFFFFF" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,168 @@
+<section class="content-box">
+   <app-sidebar id="sidebar"></app-sidebar>
+   <app-header id="header"></app-header>
+   <div class="weekly-visit-schedule">
+      <div class="row">
+         <h3>Programación Semanal 46</h3>
+         <h4>Del 12 de noviembre al 17 de noviembre</h4>
+         <input class="form-control" placeholder="Vendedor (automático)" type="text" name="" value="">
+         <input class="form-control" placeholder="ID vendedor (automático)" type="text" name="" value="">
+         <label class="fileupload form-control">
+            <input type="file" id="file" aria-label="File browser example">
+            <span class="file-custom"></span>
+         </label>
+         <input class="form-control" placeholder="Línea (automático)" type="text" name="" value="">
+         <select class="form-control" name="">
+            <option noselected="" disabled="" selected="">Entidad comercial</option>
+            <option value="Alta Verapaz">Entidad comercial</option>
+            <option value="Baja Verapaz">Entidad comercial</option>
+         </select>
+         <select class="form-control" name="">
+            <option noselected="" disabled="" selected="">Sucursal</option>
+            <option value="Alta Verapaz">Sucursal 1</option>
+            <option value="Baja Verapaz">Sucursal 2</option>
+         </select>
+      </div>
+      <div class="row">
+         <h3 class="goals">Objetivos</h3>
+         <div class="row">
+            <div class="goals-wrap">
+               <div class="row">
+                  <div class="col-md-10 colone">1. Concertación de cita</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">2. Entrevistas en oficina del cliente</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">3. Demostración</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">4. Capacitación de personal</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">5. Evaluación de procedimientos</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">6. Selección de puntos de instalación</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">7. Cierre de ventas</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">8. Entrega de producto</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">9. Revisión de equipo</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">10. Trámite de orden de compra</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-10 colone">11. Cobro</div>
+                  <div class="col-md-2 coltwo">
+                     <label class="check">
+                        <input type="checkbox" />
+                        <div class="box"></div>
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <ng-template #content let-c="close" let-d="dismiss">
+         <div class="modal-body">
+            <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+               <span aria-hidden="true">×</span>
+            </button>
+            <p class="descritionmodal">¡Has programado una visita exitosamente <br>¿Qué deseas hacer?</p>
+            <div class="row">
+               <div class="col-md-6">
+                  <button class="btn-daisotwo btn-daiso"> Ir a calendario</button>
+               </div>
+               <div class="col-md-6">
+                  <button class="btn-daiso"> Programar nueva</button>
+               </div>
+            </div>
+         </div>
+
+
+         <!--div class="modal-body">
+           <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+             <span aria-hidden="true">×</span>
+           </button>
+            <p class="descritionmodal">Ya tienes programada una visita este día a esta hora o cerca de ella. ¿Deseas reprogramar la vista ya programada?</p>
+            <div class="row">
+              <div class="col-md-6">
+                <button class="btn-daisotwo btn-daiso" > Cancelar</button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn-daiso" > Reprogramar</button>
+              </div>
+            </div>
+         </div-->
+
+
+      </ng-template>
+      <button class="btn-daiso" (click)="open(content)">Agragar a programación</button>
+   </div>
+</section>

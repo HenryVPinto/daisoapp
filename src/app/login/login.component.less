@@ -1,0 +1,108 @@
+
+.login-component{
+  .col-md-6{
+    height: 100vh;
+    h2{
+      color: #91A4AD;
+      font-size: 36px;
+      margin-bottom: 75px;
+      font-weight: normal;
+      margin-top: 0;
+    }
+    button{
+      background: #22A2F5;
+      color: #fff;
+      padding: 15px 55px;
+      border-radius: 3px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      &:hover{
+        background: #005991;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+      }
+    }
+    .col-md-12{
+      a{
+        color: #2d3134;
+        font-size: 12px;
+      }
+    }
+    &:nth-child(1){
+      background: #FBFCFF;
+      padding: 15% 10%;
+      text-align: center;
+      .form-control{
+        border: none;
+        border-bottom: 1px solid #8297A1;
+        margin-bottom: 25px;
+        box-shadow: none;
+        height: 45px;
+        border-radius: 0;
+        background: transparent;
+      }
+    }
+    &:nth-child(2){
+      padding: 20% 0;
+      text-align: center;
+      img{
+        width: 200px;
+      }
+    }
+  }
+}
+.logomovil {
+  display: none;
+  width: 150px;
+  margin: 0 auto 60px;
+}
+@media (max-width: 992px) {
+  .login-component {
+    background: #FBFCFF;
+    height: 100vh;
+    .logomovil {
+      display: block;
+    }
+    .col-logo {
+      display: none;
+    }
+    .colfirts {
+      -moz-transform: translate(0,-50%);
+      -o-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+      -webkit-transform: translate(0,-50%);
+      transform: translate(0,-50%);
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      height: auto;
+    }
+    .col-md-6 {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .login-component {
+    .colfirts {
+      padding: 0 35px!important;
+    }
+    .col-md-6 {
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}

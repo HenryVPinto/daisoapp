@@ -1,0 +1,40 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="contact-container" *blockUI="'contact-view'">
+    <div class="box-form-create">
+      <select class="form-control" [(ngModel)]="contact.accountId">
+        <option [ngValue]="''" disabled selected>
+          Seleccionar empresa Asociada
+        </option>
+        <option *ngFor="let account of accounts" value="{{account.id}}">
+          {{ account.name }}
+        </option>
+      </select>
+      <input type="text" class="form-control" placeholder="Nombre y Apellido" [(ngModel)]="contact.name">
+      <input type="text" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="contact.email">
+      <div class="row">
+        <div class="col-md-8">
+          <input type="text" class="form-control" placeholder="Teléfono" [(ngModel)]="contact.phone">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Ext." [(ngModel)]="contact.extension">
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Móvil" [(ngModel)]="contact.mobile">
+      <input type="text" class="form-control" placeholder="Cargo" [(ngModel)]="contact.title">
+      <input type="text" class="form-control" placeholder="Fecha de nacimiento" [(ngModel)]="contact.birthdate">
+      <select class="form-control" [(ngModel)]="contact.owner">
+        <option [ngValue]="''" disabled selected>
+          Seleccionar Propietario
+        </option>
+        <option *ngFor="let user of users" value="{{user.id}}">
+          {{ user.firstName }} {{ user.lastName }}
+        </option>
+      </select>
+      <div class="text-center">
+        <button class="btn-daiso" (click)="verify()" > {{ buttonTitle }} </button>
+      </div>
+    </div>
+  </div>
+</section>

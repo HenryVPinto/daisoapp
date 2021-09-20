@@ -1,0 +1,19 @@
+<section class="content-box">
+  <app-sidebar id="sidebar"></app-sidebar>
+  <app-header id="header"></app-header>
+  <div class="business-container" *blockUI="'account-view'">
+    <div class="box-form-create">
+      <input type="text" class="form-control" placeholder="Razón Comercial" [(ngModel)]="account.name_bussines">
+      <input type="text" class="form-control" placeholder="Razón Social" [(ngModel)]="account.name">
+      <input type="text" class="form-control" placeholder="Dirección Central" [(ngModel)]="account.address">
+      <input type="text" class="form-control" placeholder="Teléfono Central" [(ngModel)]="account.phone">
+      <input type="text" class="form-control" placeholder="PBX" [(ngModel)]="account.pbx">
+      <input type="text" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="account.email">
+      <input type="text" class="form-control" placeholder="Nit" [(ngModel)]="account.nit">
+      
+    <div class="text-center">
+      <button class="btn-daiso" (click)="verify()" > {{ buttonTitle }} </button>
+    </div>
+  </div>
+</div>
+</section>
